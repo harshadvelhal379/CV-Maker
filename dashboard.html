@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta http-equiv="pragma" content="no-cache" />
+  <title>Dashboard</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="img/logo.jpeg">
+
+  <script src="functions.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <a href="helpPage.html" class="my-help"><b>?</b></a>
+<!--Main Navigation-->
+<nav class="navbar navbar-expand-sm navbar-light sticky-top" style="background-color: #1A2238">
+  <div class="container-fluid">
+      <a class="navbar-brand underline fw-light" href="" src="img/logo.jpeg" style="color: #6699FF; font-size: large; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+          <img src="img/logo.jpeg" width="45" height="45"  class="d-inline-block"> CVMaker
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse offset-7" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link underline" href="index.html" style="color: rgb(237, 237, 237); font-size: larger; font-weight: bold;">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link underline" href="dashboard.html" style="color: aliceblue; font-size: larger; font-weight: bold;">Templates</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link underline" href="#footer-section" style="color: aliceblue; font-size: larger; font-weight: bold;">Contact Us</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+  <div id="prev-cover" class="preview-cover">
+    <div id="preview-div" class="my-quickpreview">
+      <img id="preview-frame" src="" style="width: 100%; overflow:hidden;">
+    </div>
+  </div>
+
+  <a id="close-preview" class="my-close-preview">X</a>
+
+  <!--Main layout-->
+  <main class="my-main" id="home" style="min-height:1500px">
+    <!--Main container-->
+    <div class="container">
+      <!--Grid row-->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center black-transparent">
+            <div class="card-body">
+              <h4 class="card-title">GCOEA Regular</h4>
+              <p class="card-text">GCOEA | Student Placement Cell
+                recommanded resume format for on-campus interviews</p>
+              <a id="prev-resume-gcoea" title="Click to preview" href="#">
+                <img src="img/resumes/gcoea.png" class="card-img-top get-big">
+              </a>
+              <a id="select-link-1" href="resume_regular.html" class="btn-select fontwhite">Select</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center black-transparent">
+            <div class="card-body">
+              <h4 class="card-title">Classic resume</h4>
+              <p class="card-text"> Classic version of
+                recommanded resume format for on-campus interviews</p>
+              <a id="prev-resume-gcoea-classic" title="Click to preview">
+                <img src="img/resumes/classic.png" class="card-img-top get-big" alt=".......">
+              </a>
+              <a id="select-link-2" href="resume_classic.html" class="btn-select fontwhite">Select</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center black-transparent">
+            <div class="card-body">
+              <h4 class="card-title">Professional</h4>
+              <p class="card-text">Standard one page resume. Best suited for professional employees.</p>
+              <a id="prev-resume-elon-musk" title="Click to preview" href="#">
+                <img src="img/resumes/elon-musk-one-page-resume.png" class="card-img-top get-big" alt=".......">
+              </a>
+              <a id="select-link-3" href="resume_elon_musk.html" class="btn-select fontwhite">Select</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Main container-->
+  </main>
+  <!--Main layout-->
+
+  <footer class="page-footer font-small special-color-dark pt-4 my-footer">
+    <!-- Footer Elements -->
+    <div id="footer-section" class="container text-center">
+    <div class="footer-copyright text-center py-3">
+      &nbsp;|&nbsp;
+      Follow me  
+      <a href="https://github.com/harshadvelhal379"> <i class="fab fa-github" style="font-size: larger; font-weight: bold;"></i></a>
+      <a href="https://www.instagram.com">  <i class="fab fa-instagram" style="font-size: larger; font-weight: bold;"></i></a>
+      <a href="https://twitter.com/home">  <i class="fab fa-twitter" style="font-size: larger; font-weight: bold;"></i></a><br>
+      Contact US harshadvelhal379@gmail.com<br>
+      Give Us a Call
+      +91-8698749574
+      <br>
+      Address--
+      GCOE,AMRAVATI (444604)
+      IT DEPARTMENT
+    </div>
+  </footer>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="app.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script>
+    var previewisON = false;
+
+    document.getElementById('prev-resume-gcoea').onclick =
+      function () {
+        previewisON = true;
+        console.log(1);
+        document.getElementById('preview-frame').src = "img/resumes/gcoea.png";
+        document.getElementById('preview-div').style.opacity = 1;
+        document.getElementById('prev-cover').style.opacity = 1;
+        document.getElementById('preview-div').style.zIndex = 1000;
+        document.getElementById('prev-cover').style.zIndex = 1000;
+        document.getElementById('close-preview').style.opacity = 1;
+        document.getElementById('close-preview').style.zIndex = 1000;
+      };
+
+    document.getElementById('prev-resume-gcoea-classic').onclick =
+      function () {
+        previewisON = true;
+        console.log(1);
+        document.getElementById('preview-frame').src = "img/resumes/classic.png";
+        document.getElementById('preview-div').style.opacity = 1;
+        document.getElementById('prev-cover').style.opacity = 1;
+        document.getElementById('preview-div').style.zIndex = 1000;
+        document.getElementById('prev-cover').style.zIndex = 1000;
+        document.getElementById('close-preview').style.opacity = 1;
+        document.getElementById('close-preview').style.zIndex = 1000;
+      };
+    document.getElementById('prev-resume-elon-musk').onclick =
+      function () {
+        previewisON = true;
+        console.log(1);
+        document.getElementById('preview-frame').src = "img/resumes/elon-musk-one-page-resume.png";
+        document.getElementById('preview-div').style.opacity = 1;
+        document.getElementById('prev-cover').style.opacity = 1;
+        document.getElementById('preview-div').style.zIndex = 1000;
+        document.getElementById('prev-cover').style.zIndex = 1000;
+        document.getElementById('close-preview').style.opacity = 1;
+        document.getElementById('close-preview').style.zIndex = 1000;
+      };
+    document.getElementById('close-preview').onclick =
+      function () {
+        if (previewisON) {
+          document.getElementById('preview-frame').src = "";
+          document.getElementById('preview-div').style.opacity = 0;
+          document.getElementById('prev-cover').style.opacity = 0;
+          document.getElementById('preview-div').style.zIndex = -1;
+          document.getElementById('prev-cover').style.zIndex = -1;
+          document.getElementById('close-preview').style.opacity = 0;
+          document.getElementById('close-preview').style.zIndex = -1;
+          previewisON = false;
+        }
+      };
+  </script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+
+</html>
